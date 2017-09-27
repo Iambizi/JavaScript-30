@@ -16,8 +16,8 @@ We make use of 2 new HTML 5 concepts:
 * ```.querySelector()```
 
 **Properties**
-* ```.classList```:simpky adds classes like you would in jQuery with key.addclass.
-* ```.propertyName```:returns the name of the CSS property associated with the transition, when a transitionevent occurs. 
+* ```.classList```: simply adds classes like you would in jQuery with key.addclass.
+* ```.propertyName```: returns the name of the CSS property associated with the transition, when a transitionevent occurs. 
 
 **objects**: 
 * ```window```
