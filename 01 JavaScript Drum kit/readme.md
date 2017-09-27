@@ -23,7 +23,7 @@ We make use of 2 new HTML 5 concepts:
 * ```window```
 
 #### Logic:
-```
+```javascript
   const keys = document.querySelectorAll('.key');
   keys.forEach(key => key.addEventListener('transitionend',removeTransition));
   window.addEventListener('keydown',playSound);
@@ -31,7 +31,8 @@ We make use of 2 new HTML 5 concepts:
 The user presses a key, and event listener is attached to each key (listening for 'keydown' or 'transitionend'), and runs one of 2 functions (```playsound()``` and ```removeTransition()``` ) when the given event  is fired. 
 
 
-```function playSound (e){
+```javascript
+function playSound (e){
    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
    console.log(audio);
@@ -46,5 +47,6 @@ The user presses a key, and event listener is attached to each key (listening fo
     if(e.propertyName !== 'transform') return // skip it if it's not transform.
     console.log(e.propertyName);
     this.classList.remove('playing');
-  }```
+  }
+
   
