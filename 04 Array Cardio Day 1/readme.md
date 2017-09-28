@@ -28,7 +28,7 @@ arr.sort((a, b) => a > b ? -1 : 1);
 ```
 content will be displayed in an descending order
 
-*```.reduce()```: reduces the array to a single value.It executes a provided function for each value of the array (from left-to-right).
+* ```.reduce()```: reduces the array to a single value.It executes a provided function for each value of the array (from left-to-right).
 The return value of the function is stored in an accumulator (result/total).
 
 ```javascript
