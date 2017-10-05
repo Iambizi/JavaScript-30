@@ -11,7 +11,7 @@ Practice using some array build-in methods: ```.filter()``` ```.map()``` ```.sor
 const fifteen = inventors.filter(inventor => (inventor.year >=1500 && inventor.year <1600));
 
 ```
-* ```.map()```: creates a new array with the results of calling a function for every array element. Important to note it does not change the original array. In our example we are asking the array be re arranged by first and last name.
+* ```.map()```: creates a new array with the results of calling a function for every array element. Important to note it does not change the original array. In our example we are asking the array to be re-arranged by first and last name.
 
 ```javascript
 const fullName = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
