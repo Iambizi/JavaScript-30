@@ -15,3 +15,5 @@ Notes i took from each challenges in Wes Bos's JavaScript 30 challenge
 6. Ajax Typehead
 
 7. Array Cardio Day 2
+
+8. HTML5 Canvas
