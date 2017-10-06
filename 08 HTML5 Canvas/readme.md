@@ -46,8 +46,6 @@ function draw(e) {
   ctx.lineTo(e.offsetX, e.offsetY);
   ctx.stroke();
   //es6 trick called destructuring an array to simplify
-  //lastX = e.offsetX
-  //lastY = e.offsetY
   [lastX, lastY] = [e.offsetX, e.offsetY];
   hue++;// part of continous color change functionality
   if (hue >= 360) {
@@ -64,4 +62,17 @@ function draw(e) {
     ctx.linewidth--;
   }
 }
+```
+**Destructuring assignment**
+ES6 allows you to easily name multiple variables, via the following notation
+
+so we can go from:
+```javascript
+lastX = e.offsetX
+lastY = e.offsetY
+```
+to 
+
+```javascript
+[lastX, lastY] = [e.offsetX, e.offsetY];
 ```
