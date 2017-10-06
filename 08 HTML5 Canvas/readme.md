@@ -36,7 +36,7 @@ next up we need a function that will be called whenever we move our mouse on top
 function draw(e) {
   if (!isDrawing) return; // stop the function from runing if no mouse down
   console.log(e);
-  //step 7 drawing path functionality
+  //drawing path functionality
   ctx.strokeStyle = `hsl(${hue},100%,50%)`// functionality for continous color change
   ctx.lineWidth = hue
   ctx.beginPath();
