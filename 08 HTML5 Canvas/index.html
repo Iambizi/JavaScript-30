@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Canvas</title>
+</head>
+<body>
+<canvas id="draw" width="800" height="800"></canvas>
+<script>
+//step 1 set up context
+const canvas = document.querySelector('#draw');
+const ctx = canvas.getContext('2d');
+//step 2 size up canvas to be exact width of window cause by defautlts its 800 X 800
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+//step 3 base settings of the strokestyles and line joined shape
+ctx.strokeStyle ='#BADA55';
+ctx.lineJoin = 'round';
+ctx.lineCap = 'round';
+ctx.lineWidth = 100;
+//step 4 dummy variables for drawing that sense when up cursor is drawing and not just moving. Starting x and y's and ending x and y's will help us determine where lines drawn start and stop
+let isDrawing = false;
+let lastX = 0;
+let lastY = 0;
+let hue = 0;
+let direction = true;// this step is important and common javascript flag to test if true or not and when we mouve mose use the info to move it.
+//step 5 function draw listents for 'mousemove' event and console logs events only when the mouse is down. It will also log a bunch of details from 'mousemove'
+function draw(e) {
+  if (!isDrawing) return; // stop the function from runing if no mouse down
+  console.log(e);
+  //step 7 drawing path functionality
+  ctx.strokeStyle = `hsl(${hue},100%,50%)`// functionality for continous color change
+  ctx.lineWidth = hue
+  ctx.beginPath();
+  // start from
+  ctx.moveTo(lastX, lastY);
+  // go to
+  ctx.lineTo(e.offsetX, e.offsetY);
+  ctx.stroke();
+  //es6 trick called destructuring an array to simplify
+  //lastX = e.offsetX
+  //lastY = e.offsetY
+  [lastX, lastY] = [e.offsetX, e.offsetY];
+  hue++;// part of continous color change functionality
+  if (hue >= 360) {
+    hue = 0;
+  }
+  // flipping direction and linewidth of cursor. We increment the linewidth from 1 to 100, but once we hit a 100 we are going back down from 100 lineWidth to 1. Hence if 100 > or < 1 flip direction.
+  if (ctx.lineWidth >= 100 || ctx.linwidth <=1) {
+    direction = !direction;
+  }
+  //So depending on that direction we either increment that lineWidth or decrement it.
+  if (direction) {
+    ctx.linewidth++;
+  } else {
+    ctx.linewidth--;
+  }
+}
+//step 6 click and drag functionality
+canvas.addEventListener('mousemove', draw);
+// we had to update 'mousedown' event listener to maker sure that the function updates the lastX and the lastY of cursor so as to avoid it always joining lines when we release the mouse the press it down again
+canvas.addEventListener('mousedown',(e) => {
+  isDrawing = true;
+  [lastX, lastY] = [e.offsetX, e.offsetY];
+});
+canvas.addEventListener('mouseup',() => isDrawing = false);
+canvas.addEventListener('mouseout', () => isDrawing = false);
+
+</script>
+
+<style>
+  html, body {
+    margin:0;
+  }
+</style>
+
+</body>
+</html>
 
