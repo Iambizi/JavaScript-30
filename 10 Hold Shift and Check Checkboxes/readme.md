@@ -9,4 +9,4 @@ In this project we built a script that enables us to check multiple checkboxes a
 
 ### Logic
 
-The most complicated part of this project for me was to wrap my head around the `let inBetween = false` flag  
+`let inBetween = false` flag  
