@@ -7,6 +7,6 @@ In this project we built a script that enables us to check multiple checkboxes a
 * `event.shiftKey`: Property that allows us to check if the the shift key is active.
 * `checkbox.checked`: Property that allows us to check wether a checkbox has been checked or not. (It returns a bolean to determine it)
 
-### Logic
+### Logic(in progress)
 
 `let inBetween = false` flag  
