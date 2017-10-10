@@ -4,18 +4,18 @@ Notes i took from each challenges in Wes Bos's JavaScript 30 challenge
 ## Challenges 
 [1. Drum Kit](https://github.com/Iambizi/JavaScript-30/tree/master/01%20JavaScript%20Drum%20kit#javascript-drum-kit)
 
-[2. JS Clock](02_Js_Clock/readme.md)
+[2. JS Clock](https://github.com/Iambizi/JavaScript-30/tree/master/02%20JS%20Clock)
 
-[3. CSS Variables](03_CSS_Variables/reamed.md)
+[3. CSS Variables](https://github.com/Iambizi/JavaScript-30/tree/master/03%20CSS%20Variables#css-variables)
 
-[4. Array Cardio Day 1](04_Array_Cardio_Day_1/reamed.md)
+[4. Array Cardio Day 1](https://github.com/Iambizi/JavaScript-30/tree/master/04%20Array%20Cardio%20Day%201)
 
-[5. Flex Panel Gallery](05_Flex_Panel_Gallery/reamed.md)
+[5. Flex Panel Gallery](https://github.com/Iambizi/JavaScript-30/tree/master/05%20Flex%20Panel%20Gallery#flex-panel-gallery)
 
-[6. Ajax Typehead](06_Ajax_Type_Ahead/reamed.md)
+[6. Ajax Typehead](https://github.com/Iambizi/JavaScript-30/tree/master/06%20Ajax%20Type%20Ahead#ajax-type-ahead)
 
-[7. Array Cardio Day 2](07_Array_Cardio_Day_2/reamed.md)
+[7. Array Cardio Day 2](https://github.com/Iambizi/JavaScript-30/tree/master/07%20Array%20Cardio%20Day%202)
 
-[8. HTML5 Canvas](08_HTML5_Canvas/reamed.md)
+[8. HTML5 Canvas](https://github.com/Iambizi/JavaScript-30/tree/master/08%20HTML5%20Canvas#html-5-canvas)
 
-[9. Dev Tools Domination](09_Dev_Tools_Domination/reamed.md)
+[9. Dev Tools Domination](https://github.com/Iambizi/JavaScript-30/tree/master/09%2014%20Must%20Know%20Dev%20Tools%20Tricks#14-must-know-dev-tool-tricks)
