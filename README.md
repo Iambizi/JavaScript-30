@@ -20,4 +20,4 @@ Notes i took from each challenges in Wes Bos's JavaScript 30 challenge
 
 [9. Dev Tools Domination](https://github.com/Iambizi/JavaScript-30/tree/master/09%2014%20Must%20Know%20Dev%20Tools%20Tricks#14-must-know-dev-tool-tricks)
 
-[10. Hold Shift and Check Checkboxes]()
+[10. Hold Shift and Check Checkboxes](https://github.com/Iambizi/JavaScript-30/tree/master/10%20Hold%20Shift%20and%20Check%20Checkboxes)
