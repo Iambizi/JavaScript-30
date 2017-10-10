@@ -2,7 +2,7 @@
 Notes i took from each challenges in Wes Bos's JavaScript 30 challenge
 
 ## Challenges 
-[1. Drum Kit](JavaScript-30/tree/master/01 Javascript Drum kit)
+[1. Drum Kit](JavaScript-30/tree/master/01_Javascript_Drum_kit)
 
 [2. JS Clock](02_Js_Clock/readme.md)
 
