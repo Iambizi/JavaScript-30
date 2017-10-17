@@ -1,5 +1,10 @@
 # JavaScript-30
-Notes i took from each challenges in Wes Bos's JavaScript 30 challenge
+Notes i took from Wes Bos's JavaScript 30 challenges. 
+For the most part I tried to break down the logic of the projects step by step.
+
+Grab the course at https://JavaScript30.com
+
+
 
 ## Challenges 
 [1. Drum Kit](https://github.com/Iambizi/JavaScript-30/tree/master/01%20JavaScript%20Drum%20kit#javascript-drum-kit)
