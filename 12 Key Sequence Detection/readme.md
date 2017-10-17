@@ -30,4 +30,4 @@ if (pressed.join('').includes(secretCode)){
 ```
 
 
-Store them in an array and then check everytime it keys up if it matches what you are looking for.
+To sum it up, Store the keys in an array and then check everytime the keys are hit if it matches what you are looking for.
