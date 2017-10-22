@@ -10,6 +10,8 @@ The following properties are associated with the `window` object.
 
 * `window.innerHeight`: returns Height (in pixels) of the browser window viewport.
 
+* `offsetTop`: read-only property returns the distance of the current element relative to the top of the offsetParent node. So how far the top of our image is from the top of our window
+
 ### Logic:
 
 * debouncing:
@@ -39,10 +41,12 @@ function debounce(func, wait = 20, immediate = true) {
   ```javascript
   sliderImages.forEach(sliderImage =>{
 
-
+        // shows image scrolled halfway through
         const slideInAt = (window.scrollY + innerHeight) - sliderImage.height / 2;
+        // tells us when we've reached the bottom of the image.
         const imageBottom = sliderImage.offsetTop + sliderImage.height;
+        // makes sure the slide in value is > than where the top of the actual image is.
         const isHalfShown = slideInAt > sliderImage.offsetTop;
-
+        // checks that we are not scrolled past the image (cause if we are then we need to slide it out.)
         const isNotScrolledPast = window.scrollY < imageBottom;
   ```
