@@ -30,3 +30,5 @@ Grab the course at https://JavaScript30.com
 [11. Custom HTML 5 Video Player](https://github.com/Iambizi/JavaScript-30/tree/master/11%20Custom%20HTML%205%20Video%20Player)
 
 [12. Key Sequence Detection](https://github.com/Iambizi/JavaScript-30/tree/master/12%20Key%20Sequence%20Detection)
+
+[13. Slide In on Scroll](https://github.com/Iambizi/JavaScript-30/tree/master/13%20Slide%20In%20on%20Scroll)
