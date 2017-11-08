@@ -33,4 +33,4 @@ Grab the course at https://JavaScript30.com
 
 [13. Slide In on Scroll](https://github.com/Iambizi/JavaScript-30/tree/master/13%20Slide%20In%20on%20Scroll)
 
-[14. Objects and Arrays](https://github.com/Iambizi/JavaScript-30/blob/master/14%20%20Objects%20and%20Arrays%20-%20References%20VS%20Copying)
+[14. Objects and Arrays]()
