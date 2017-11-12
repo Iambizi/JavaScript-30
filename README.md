@@ -35,3 +35,7 @@ Grab the course at https://JavaScript30.com
 
 [14. Objects and Arrays - Reference vs Copy](https://github.com/Iambizi/JavaScript-30/tree/master/14%20Objects%20and%20Arrays%20-%20Reference%20VS%20Copy)
 
+[15.Local Storage and Event Delegation](https://github.com/Iambizi/JavaScript-30/tree/master/15%20LocalStorage%20and%20Event%20Delegation)
+
+[16. CSS Text Shadow Mouse Move Effect](https://github.com/Iambizi/JavaScript-30/tree/master/16%20CSS%20Text%20Shadow%20Mouse%20Move%20Effect)
+
