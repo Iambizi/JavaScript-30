@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mouse Shadow</title>
+</head>
+<body>
+
+  <div class="hero">
+    <h1 contenteditable>🔥WOAH!</h1>
+  </div>
+
+  <style>
+  html {
+    color:black;
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .hero {
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+  }
+
+  h1 {
+    text-shadow: 10px 10px 0 rgba(0,0,0,1);
+    font-size: 100px;
+  }
+  </style>
+
+<script>
+//1 select hero text
+const hero = document.querySelector('.hero');
+const text = hero.querySelector('h1');
+//5 determines how far will the text shadow go, how many pixels at it's most should it be stretched
+const walk = 200; // 100px. if 100 is our walk then 50 should as high as we go and -50 as low as we go
+
+function shadow(e){
+  //this will gives all kinds of info on mousemove
+  // console.log(e);
+  //3 get width and height of what we are hovering on, our hero variable.
+  //This is the way to do it without ES6 destructuring
+  // const width = hero.offsetWidth;
+  // const height = hero.offsetHeight;
+  //this is the way to do with ES6 destructuring
+  const {offsetWidth: width, offsetHeight: height } = hero;
+  //we also need to get information on where the cursor was, and well be taking it off of the event.
+  //this is same as writting: e.offsetX and e.offsetY.
+  let {offsetX: x, offsetY: y} = e;
+  //4 little issue: eventhought we are listening for the mousemove on the hero element, if this element has nested elements it will also give us the x and y of the child element aswell. so we need to do some normalization to modify x and y values to make em consistent all accross.
+
+  if(this !== e.target) {
+    x = x + e.target.offsetLeft;
+    y = y + e.target.offSetTop;
+  }
+  const xWalk = Math.round((x / width * walk) - (walk/2));
+  const yWalk = Math.round((y / height * walk) - (walk/2));
+//6 set the styling of the x and y walks
+ text.style.textShadow = `
+ ${xWalk}px ${yWalk}px 0 rgba(225,0,255,0.7),
+ ${xWalk * - 1}px ${yWalk}px 0 rgba(0,255,255,0.7),
+ ${yWalk}px ${xWalk * - 1}px 0 rgba(0,255,0,0.7),
+ ${yWalk * - 1}px ${xWalk}px 0 rgba(0,0,255,0.7)
+ `;
+}
+
+//2 listen for mousemove then run shadow
+hero.addEventListener('mousemove',shadow);
+</script>
+</body>
+</html>
