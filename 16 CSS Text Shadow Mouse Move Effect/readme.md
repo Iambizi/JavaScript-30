@@ -25,7 +25,7 @@ to this
  let {offsetX: x, offsetY: y} = e;
  ```
 
-#### Logic
+## Logic
 
 1 select hero text
 ```javscript
