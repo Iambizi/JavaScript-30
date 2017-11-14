@@ -39,3 +39,5 @@ Grab the course at https://JavaScript30.com
 
 [16. CSS Text Shadow Mouse Move Effect](https://github.com/Iambizi/JavaScript-30/tree/master/16%20CSS%20Text%20Shadow%20Mouse%20Move%20Effect)
 
+[17. Sort without article names](https://github.com/Iambizi/JavaScript-30/tree/master/17%20Sort%20without%20articles)
+
