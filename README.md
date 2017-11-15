@@ -41,3 +41,5 @@ Grab the course at https://JavaScript30.com
 
 [17. Sort without article names](https://github.com/Iambizi/JavaScript-30/tree/master/17%20Sort%20without%20articles)
 
+[18. Adding Up Times with Reduce]()
+
