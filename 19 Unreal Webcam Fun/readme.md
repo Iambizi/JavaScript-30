@@ -44,6 +44,10 @@ In this case, the pixels are drawn onto the canvas via `drawImage` which takes i
 * width
 * height
 
+```javascript
+ctx.drawImage(video, 0, 0, width, height);
+```
+
 ### Logic 
 
 1 The video comes from our webcam and gets pipped in to our video element in our index.html file : 
@@ -64,7 +68,11 @@ function getVideo() {
     });
 }
 ```
-2 Then we took our video and put it in a canvas element
+2 Then we took our video and put it in a canvas element in our index.html file :
+
+```html  
+<canvas class="photo"></canvas>
+```
 
 ```javascript
 function paintToCanvas() {
@@ -110,6 +118,8 @@ function takePhoto() {
 ```
 * then we can also add camera effects on the video with a specific script for each effect:
 
+- examples: 
+
 ```javascript
 function redEffect(pixels) {
   for(let i = 0; i < pixels.data.length; i+=4) {
@@ -119,40 +129,13 @@ function redEffect(pixels) {
   }
   return pixels;
 }
-
+-
 function rgbSplit(pixels) {
   for(let i = 0; i < pixels.data.length; i+=4) {
     pixels.data[i - 150] = pixels.data[i + 0]; // RED
     pixels.data[i + 500] = pixels.data[i + 1]; // GREEN
     pixels.data[i - 550] = pixels.data[i + 2]; // Blue
   }
-  return pixels;
-}
-
-function greenScreen(pixels) {
-  const levels = {};
-
-  document.querySelectorAll('.rgb input').forEach((input) => {
-    levels[input.name] = input.value;
-  });
-
-  for (i = 0; i < pixels.data.length; i = i + 4) {
-    red = pixels.data[i + 0];
-    green = pixels.data[i + 1];
-    blue = pixels.data[i + 2];
-    alpha = pixels.data[i + 3];
-
-    if (red >= levels.rmin
-      && green >= levels.gmin
-      && blue >= levels.bmin
-      && red <= levels.rmax
-      && green <= levels.gmax
-      && blue <= levels.bmax) {
-      // take it out!
-      pixels.data[i + 3] = 0;
-    }
-  }
-
   return pixels;
 }
 ```
