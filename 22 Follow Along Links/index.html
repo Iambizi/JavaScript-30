@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>👀👀👀Follow Along Nav</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">Order Status</a></li>
+        <li><a href="">Tweets</a></li>
+        <li><a href="">Read Our History</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="wrapper">
+      <p>Lorem ipsum dolor sit amet, <a href="">consectetur</a> adipisicing elit. Est <a href="">explicabo</a> unde natus necessitatibus esse obcaecati distinctio, aut itaque, qui vitae!</p>
+      <p>Aspernatur sapiente quae sint <a href="">soluta</a> modi, atque praesentium laborum pariatur earum <a href="">quaerat</a> cupiditate consequuntur facilis ullam dignissimos, aperiam quam veniam.</p>
+      <p>Cum ipsam quod, incidunt sit ex <a href="">tempore</a> placeat maxime <a href="">corrupti</a> possimus <a href="">veritatis</a> ipsum fugit recusandae est doloremque? Hic, <a href="">quibusdam</a>, nulla.</p>
+      <p>Esse quibusdam, ad, ducimus cupiditate <a href="">nulla</a>, quae magni odit <a href="">totam</a> ut consequatur eveniet sunt quam provident sapiente dicta neque quod.</p>
+      <p>Aliquam <a href="">dicta</a> sequi culpa fugiat <a href="">consequuntur</a> pariatur optio ad minima, maxime <a href="">odio</a>, distinctio magni impedit tempore enim repellendus <a href="">repudiandae</a> quas!</p>
+    </div>
+
+  <script>
+    // 👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀
+    //1 get all the triggers: so everything on our page that when overed over will create the navigation pill effect
+    const triggers = document.querySelectorAll('a');
+    //2 then we need to create the highlight
+    //2a create a span
+    const highlight = document.createElement('span');
+    //2b add a class of 'highlight' to the element
+    highlight.classList.add('highlight');
+    //2c put it into the dom
+    document.body.append(highlight);
+    //3 now we need to listen to somoene 'hovering over a link' and create the high callback function
+    function highlightLink() {
+      console.log('Highlight!!');
+      //4 now when we hover over an element on our page we need to figure out how big and where that element is
+      //so width height x an y we do this through getBoundingClientRect()
+      const linkCoords = this.getBoundingClientRect();
+      console.log(linkCoords);
+      //5 now we run into an issue where when we scroll down the page and hover the links the highlights are off by the amount of the scroll.
+      // to compensate for that we take how far u scrolled down and add it from the hightlight.
+      const coords = {
+        width: linkCoords.width,
+        height: linkCoords.height,
+        top: linkCoords.top + window.scrollY,
+        left: linkCoords.left  window.scrollX
+      }
+      //4anow that we have those coordinates we can now apply the styling on our highlights
+      highlight.style.height = `${coords.height}px`;
+      highlight.style.width = `${coords.width}px`;
+      //4bwith js we are going to animate the left and the top value and make their values dynamic. top and left because of the flow of our mouse on navigation links.
+      highlight.style.transform =`translate(${coords.left}px, ${coords.top}px)`;
+    }
+    //3
+   triggers.forEach(a => a.addEventListener('mouseenter', highlightLink));
+  </script>
+</body>
+</html>
