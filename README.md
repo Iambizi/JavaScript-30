@@ -49,5 +49,5 @@ Grab the course at https://JavaScript30.com
 
 [21. Geolocation](https://github.com/Iambizi/JavaScript-30/tree/master/21%20Geolocation%20based%20on%20Speedometer%20and%20Compass)
 
-[22. Follow Along Links]()
+[22. Follow Along Links](https://github.com/Iambizi/JavaScript-30/tree/master/22%20Follow%20Along%20Links)
 
