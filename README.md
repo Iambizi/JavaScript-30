@@ -51,3 +51,5 @@ Grab the course at https://JavaScript30.com
 
 [22. Follow Along Links](https://github.com/Iambizi/JavaScript-30/tree/master/22%20Follow%20Along%20Links)
 
+[23. Speech Synthesis](https://github.com/Iambizi/JavaScript-30/tree/master/23%20Speech%20Synthesis)
+
