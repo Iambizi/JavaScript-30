@@ -55,3 +55,5 @@ Grab the course at https://JavaScript30.com
 
 [24. Sticky Nav](https://github.com/Iambizi/JavaScript-30/tree/master/24%20Sticky%20Nav)
 
+[25. Event Capture, Propagation, Bubbling and Once]()
+
