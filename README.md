@@ -53,3 +53,5 @@ Grab the course at https://JavaScript30.com
 
 [23. Speech Synthesis](https://github.com/Iambizi/JavaScript-30/tree/master/23%20Speech%20Synthesis)
 
+[24. Sticky Nav](https://github.com/Iambizi/JavaScript-30/tree/master/24%20Sticky%20Nav)
+
