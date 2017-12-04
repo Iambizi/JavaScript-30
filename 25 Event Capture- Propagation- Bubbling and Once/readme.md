@@ -9,13 +9,19 @@ With bubbling, when you have elements nested within each other, if your listen f
 
 Capture allows you to run the function on the way down, rather than on the way up (one, two, three instead of three, two, one)
 
-`stopPropagation()`: stop bubbling events up, and returns only what you clicked on. 
+#### stopPropagation(): 
 
-`capture: true/ false` : (3rd argument in an event listener event, callback function, options object) An options object that when set to true if your event listener listened for a click on an element it will return the 1st highest parent and stop there.
+stop bubbling events up, and returns only what you clicked on. 
+
+#### `capture: true/ false`  
+
+(3rd argument in an event listener event, callback function, options object) An options object that when set to true if your event listener listened for a click on an element it will return the 1st highest parent and stop there.
 
 When set to false along with `e.stopPropagation()` it will return only values for the individual element you clicked on.  
 
-`Once: true/ false` : Another options object listens for an event then unbinds itself so it would be the same as saying: 
+#### `Once: true/ false` 
+
+Another options object listens for an event then unbinds itself so it would be the same as saying: 
 
 ```javascript
 div.removeEventListener('click', logText)
