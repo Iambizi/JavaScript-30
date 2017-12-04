@@ -9,7 +9,7 @@ With bubbling, when you have elements nested within each other, if your listen f
 
 Capture allows you to run the function on the way down, rather than on the way up (one, two, three instead of three, two, one)
 
-#### stopPropagation(): 
+#### `stopPropagation()` 
 
 stop bubbling events up, and returns only what you clicked on. 
 
