@@ -57,3 +57,4 @@ Grab the course at https://JavaScript30.com
 
 [25. Event Capture, Propagation, Bubbling and Once](https://github.com/Iambizi/JavaScript-30/tree/master/25%20Event%20Capture-%20Propagation-%20Bubbling%20and%20Once)
 
+[26. Stripe Follow Along Dropdown](https://github.com/Iambizi/JavaScript-30/tree/master/26%20Stripe%20Follow%20Along%20Dropdown)
