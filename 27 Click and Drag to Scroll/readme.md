@@ -2,9 +2,7 @@
 
 In this project we built a replica of a grab and scroll effect.
 
-### Logic
-
-Selecting the items within white box, then listen a few events: (click down, add class of active), (figure out where we clicked down), mousedown, mouseleave, mouseout, and mousemove
+### Notes
 
 #### flag variables
 
@@ -18,14 +16,19 @@ isDown = true;
 
 #### pageX and offsetLeft
 
-* `pageX` is a mouse event property that allows us to output the coordinates of a mouse pointer when it is clicked.
+* `pageX` : is a mouse event property that allows us to output the coordinates of a mouse pointer when it is clicked.
 
 ```javascript
 event.pageX
 ```
 
-* `offsetLeft`we used this read only property to compensate for any added space by a margin or padding so that our `pageX` is still accurate by substraction. 
+* `offsetLeft`: We already found out where the cursor was when we clicked down with `pageX`, now we want to know where it was when we moved it.Using `offsetLeft` we can recalculate every single time that we moved the mouse.
+
 
 ```javascript
 startX = e.pageX - slider.offsetLeft;
 ```
+### Logic
+
+Selecting the numbers sliders within white box, then listen to a mainly four events: mousedown, mouseleave, mouseout, and mousemove. Then execute a callback function for each. 
+
