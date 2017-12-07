@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Click and Drag</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="items">
+    <div class="item item1">01</div>
+    <div class="item item2">02</div>
+    <div class="item item3">03</div>
+    <div class="item item4">04</div>
+    <div class="item item5">05</div>
+    <div class="item item6">06</div>
+    <div class="item item7">07</div>
+    <div class="item item8">08</div>
+    <div class="item item9">09</div>
+    <div class="item item10">10</div>
+    <div class="item item11">11</div>
+    <div class="item item12">12</div>
+    <div class="item item13">13</div>
+    <div class="item item14">14</div>
+    <div class="item item15">15</div>
+    <div class="item item16">16</div>
+    <div class="item item17">17</div>
+    <div class="item item18">18</div>
+    <div class="item item19">19</div>
+    <div class="item item20">20</div>
+    <div class="item item21">21</div>
+    <div class="item item22">22</div>
+    <div class="item item23">23</div>
+    <div class="item item24">24</div>
+    <div class="item item25">25</div>
+  </div>
+
+<script>
+//1 grab sliders
+const slider = document.querySelector('.items');
+//2 we set a couple of variables that are all going to change and be updated so let variables. No values are assigned now because they will change with our event listeners
+// our flag variables set to true or false depending on if we are clicking or not.
+let isDown = false;
+let startX
+let scrollLeft;
+// 3 set the event listeners for now we set up the code for our callback inline cause it's important to see the code but we can refactor them into separate functions later on.
+slider.addEventListener('mousedown', (e)=>{
+  isDown = true;
+  slider.classList.add('active');
+  //4 when somoeone clicks down, before they start moving left or right, we need to record where we did that initial clickdown,
+  console.log(e.pageX);// this would log our clickdown location, but we need to make sure to record the location when we are inside our sliders
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('mouseleave', ()=>{
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mouseup', ()=>{
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mousemove',(e)=>{
+  if(!isDown) return; // stop the function from running
+  console.log(isDown);
+  console.log('Do work!');
+  e.preventDefault();// stops any default browser attempts to select texts
+  //we already found out where the cursor was when we clicked down, now we want to know where it was when we moved it. Recalculate every single time that we moved the mouse.
+  const x = e.pageX - slider.offsetLeft;
+  //how far we have deviated from that intial space.
+  const walk = (x - startX) * 3;
+  console.log(walk);
+  // 5 get the slider div to scrollLeft
+  slider.scrollLeft = scrollLeft - walk;
+});
+</script>
+
+  </body>
+</html>
