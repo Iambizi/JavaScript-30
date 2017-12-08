@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Speed Scrubber</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <video class="flex" width="765" height="430" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" loop controls></video>
+    <div class="speed">
+      <div class="speed-bar">1×</div>
+    </div>
+  </div>
+
+<script>
+//1
+const speed = document.querySelector('.speed');
+const bar = speed.querySelector('.speed-bar');
+const video = document.querySelector('.flex');
+
+function videoSpeed(e) {
+  // In our speed-bar we need to figure out where we are in terms of pixels. We substract the top bar because we cannot assume that
+  const y = e.pageY - this.offsetTop;
+  console.log(y);
+  // now we need to figure out what those pixel values amount to in percentage.
+  const percent = y / this.offsetHeight;
+  //min and max values
+  const min = 0.4;
+  const max = 4;
+  const height = Math.round(percent * 100) + '%';
+  // calculate the playbackRate to update the number in our speed rate
+  const playbackRate = percent * (max - min ) + min;
+  bar.style.height = height;
+  bar.textContent = playbackRate.toFixed(2) + 'x';// .toFixed() method rounds to 2 digits after decimal
+  console.log(playbackRate);
+  console.log(percent);
+  // now lets tale that playbackRate and apply it to our video
+  video.playbackRate = playbackRate;
+}
+
+speed.addEventListener('mousemove', videoSpeed);
+</script>
+</body>
+</html>
