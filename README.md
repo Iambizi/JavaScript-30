@@ -62,3 +62,5 @@ Grab the course at https://JavaScript30.com
 [27. Click and Drag to Scroll](https://github.com/Iambizi/JavaScript-30/tree/master/27%20Click%20and%20Drag%20to%20Scroll)
 
 [28. Video Speed Controller UI](https://github.com/Iambizi/JavaScript-30/tree/master/28%20Video%20Speed%20Controller%20UI)
+
+[29. Countdown Clock]()
