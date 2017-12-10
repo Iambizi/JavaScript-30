@@ -63,4 +63,6 @@ Grab the course at https://JavaScript30.com
 
 [28. Video Speed Controller UI](https://github.com/Iambizi/JavaScript-30/tree/master/28%20Video%20Speed%20Controller%20UI)
 
-[29. Countdown Clock]()
+[29. Countdown Clock](https://github.com/Iambizi/JavaScript-30/tree/master/29%20Countdown%20Clock)
+
+[30. Whack A Mole Game]()
