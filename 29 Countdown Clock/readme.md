@@ -52,6 +52,5 @@ function timer(seconds) {
     displayTimeLeft(secondsLeft);
   }, 1000);
 }
-
 ```
 
