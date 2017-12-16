@@ -65,4 +65,4 @@ Grab the course at https://JavaScript30.com
 
 [29. Countdown Clock](https://github.com/Iambizi/JavaScript-30/tree/master/29%20Countdown%20Clock)
 
-[30. Whack A Mole Game]()
+[30. Whack A Mole Game](https://github.com/Iambizi/JavaScript-30/tree/master/30%20Whack%20A%20Mole%20Game)
