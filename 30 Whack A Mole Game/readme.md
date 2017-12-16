@@ -39,8 +39,8 @@ function randomHole(holes) {
 
  Our game will revolves around 5 functions:
 
-* a function that generates a random interval of time `randomTime`
-* a function that returns a random hole each time its called `startGame`
-* one that enables the moles to pop up `peep`
-* one that allows us to start the game `startGame`
-* one that allows to "whack" a mole when we click on it, keep track of our points and display them `bonk`
+* a function that generates a random interval of time: `randomTime`
+* a function that returns a random hole each time its called: `startGame`
+* one that enables the moles to pop up: `peep`
+* one that allows us to start the game: `startGame`
+* one that allows to "whack" a mole when we click on it, keep track of our points and display them: `bonk`
