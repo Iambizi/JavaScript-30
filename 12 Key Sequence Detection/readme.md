@@ -11,6 +11,7 @@ We start by creating an event listener for `keyup` that will push all the keys w
 ```javascript
 window.addEventListener('keyup', (e) => {
   console.log(e.key);
+ }
 ```
 We then create a constant `secretCode` that contains the word or key sequence we wish to detect.
 ```javascript
