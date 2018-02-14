@@ -5,7 +5,7 @@ In this project we learn about the concept of bubbling, the capture which is an 
 
 ### Notes
 
-With bubbling, when you have elements nested within each other, if your listen for an event it will ripple all the way up to the top of the DOM.
+With bubbling, when you have elements nested within each other, if you listen for an event it will ripple all the way up to the top of the DOM.
 
 Capture allows you to run the function on the way down, rather than on the way up (one, two, three instead of three, two, one)
 
